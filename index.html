@@ -56,6 +56,164 @@ footer{padding:45px 7vw;background:#01060b;color:#7d8a96}
  .formgrid{grid-template-columns:1fr}
  textarea{grid-column:auto}
 }
+ /* ===== PHENYRA MOBILE / TABLET FIX ===== */
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(1200px, 100% - 32px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.cards,
+.results,
+.trust {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+    max-width: none;
+  }
+
+  section {
+    padding: 64px 0 !important;
+  }
+
+  .hero {
+    min-height: 680px !important;
+    width: 100%;
+    background-position: center center !important;
+  }
+
+  .hero > * {
+    max-width: 100%;
+  }
+
+  .hero h1,
+  .hero h2,
+  .hero p {
+    max-width: 100% !important;
+    overflow-wrap: break-word;
+  }
+
+  .cards {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .trust {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .result {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .formgrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  textarea {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  .footer {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .logo {
+    max-width: 180px !important;
+    width: auto !important;
+  }
+
+  .nav-hot {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+
+  .quote-hot {
+    right: 14px !important;
+    top: 14px !important;
+    width: auto !important;
+  }
+
+  .service-hot {
+    left: 14px !important;
+    right: 14px !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  section {
+    padding: 52px 0 !important;
+  }
+
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .hero {
+    min-height: 620px !important;
+  }
+
+  h2 {
+    font-size: clamp(30px, 9vw, 44px) !important;
+  }
+
+  .card {
+    padding: 24px !important;
+  }
+
+  .result {
+    padding: 20px !important;
+  }
+}
 </style>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
